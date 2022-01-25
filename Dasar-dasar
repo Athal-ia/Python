@@ -1,0 +1,44 @@
+GANJIL/GENAP/NOL
+
+angka1 = int(input("Masukkan Angka 1 = "))
+angka2 = int(input("Masukkan Angka 2 = "))
+for i in range(angka1, angka2):
+if(i%2==0 and i!=0):
+print("Angka", i ,"adalah Genap")
+elif(i%2==1 and i!=0):
+print("Angka", i, "adalah Ganjil")
+else:
+print("Angka", i, "adalah Nol")
+
+
+HITUNG HURUF
+
+word = input("Masukkan sebuah kata (tanpa spasi) = ")
+word = word.lower()
+wordlength = len(word)
+i = 0
+vocal = 0
+konsonan = 0
+while i < wordlength:
+if(word [i] == "a" or word [i] == "i" or word [i] == "u" or word [i] == "e" or word [i] == "o"):
+vocal += 1
+else:
+konsonan += 1
+i += 1
+print("Jumlah semua huruf =", wordlength)
+print("Jumlah huruf vokal =", vocal)
+print("Jumlah huruf konsonan =", konsonan)
+
+
+HITUNG SALDO
+
+tabungan = int(input("Masukkan tabungan = "))
+jajan = 0
+hitung = 0
+while (jajan <= tabungan):
+hitung += 1
+tabungan = tabungan - jajan
+jajan = int(input("Jajan berapa = "))
+if (jajan > tabungan):
+break
+print ("Uangmu gak cukup buat jajan", jajan ,"karena tinggal", tabungan ,"doang")
